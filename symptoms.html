@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Symptoms - Sickness Prediction System</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('bg.webp'); /* Update the background image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff; /* Set text color to contrast with background */
+            backdrop-filter: blur(5px); /* Adjust the blur value as needed */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            min-height: 100vh;
+            justify-content: center;
+        }
+        nav {
+            background-color: rgba(4, 26, 58, 0.8); /* Add alpha channel for transparency */
+            padding: 15px;
+            position:absolute
+             width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav img {
+            height: 40px; /* Adjust the height as needed */
+            margin-left: 10px;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1px 10px;
+            justify-content: center;
+            align-items: flex-start; /* Align items to the top */
+            height: 82.6vh;
+            box-sizing: border-box;
+            padding: 20px;
+            
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            
+        }
+
+        .description {
+         grid-column: span 2; /* Span the full width of the grid */
+         text-align: center;
+        margin-bottom: -100px; /* Adjust the margin as needed */
+        position: relative;
+        top: 10px; /* Adjust the top position to move the description down */
+        font-size: 30px;
+        color: rgba(4, 26, 58, 0.8);
+        font-family: 'Times New Roman', Times, serif;
+        
+
+        }
+
+        button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    margin-left: 50%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    
+    
+}
+
+
+
+        footer {
+            background-color: rgba(4, 26, 58, 0.8);  /* Add alpha channel for transparency */
+            padding: 20px;
+            text-align: left;
+           
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer .about,
+        footer .social {
+            width: 50%;
+            float: left;
+            box-sizing: border-box;
+            padding: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+
+            nav img {
+                margin: 0;
+            }
+
+            section {
+                grid-template-columns: 1fr; /* Single column on smaller screens */
+            }
+
+            .description {
+        grid-column: span 1; /* Span the full width of the grid in a single column layout */
+        text-align: center;
+        margin-bottom: 10px; /* Adjust the margin as needed */
+        position: static; /* Reset position for mobile view */
+        top: auto; /* Reset top for mobile view */
+    }
+           button{
+
+            margin-left: 0%;
+           }
+            .checkDiseaseBtn{
+                align-items: center;
+
+        
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <img src="PROJECT LOGO.png" alt="Logo">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="signup.html">Signup</a>
+        </div>
+    </nav>
+
+    <section>
+
+        <div class="description">
+            <p>Choose symptoms from the dropdown lists below:</p>
+        </div>
+
+        <select id="symptom1" name="symptom1" required>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <select id="symptom2" name="symptom2" required>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <select id="symptom3" name="symptom3" required>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <select id="symptom4" name="symptom4" required>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <select id="symptom5" name="symptom5" required>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <select id="symptom6" name="symptom6" required>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <!-- Add more options as needed -->
+        </select>
+        <button id="checkDiseaseBtn">Check Disease</button>
+
+
+        
+    </section>
+    
+    <footer>
+        <div class="about">
+            <p>About the System: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="social">
+            <p>Contact us on Instagram or Twitter: @sicknessprediction</p>
+        </div>
+    </footer>
+
+
+    
+</body>
+
+</html>
